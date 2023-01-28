@@ -8,7 +8,8 @@ print "HOOK: " . join (' ', @ARGV) . "\n";
 
 my $phase = shift;
 
-if ($phase eq 'job-start' || 
+if ($phase eq 'job-init' ||
+	$phase eq 'job-start' ||
 	$phase eq 'job-end'  || 
 	$phase eq 'job-abort') { 
 
